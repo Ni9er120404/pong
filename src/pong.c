@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void print_game_screen(int height, int width, int left_rocket_position, int right_rocket_position, int ball_x,
                        int ball_y);
@@ -116,4 +117,4 @@ int update_rocket_position(int height, int current_position, char symbol, char u
     return current_position;
 }
 
-void clear_screen() { printf("\33[0d\33[2J"); }
+void clear_screen() { system("clear"); }
